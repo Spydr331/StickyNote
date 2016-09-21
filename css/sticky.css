@@ -1,0 +1,48 @@
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  	background-color: #ffffff; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 14px; color: #555;
+    -webkit-font-smoothing: antialiased; -webkit-overflow-scrolling: touch;
+}
+
+
+/* Sticky Notes */
+.pixeleditboard { margin:0 auto; cursor:pointer; border:2px solid #eee; }
+.pixel {
+    background-color: #fff; float:left; margin:3px; position:relative;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.pixel.postit {
+    box-shadow: -webkit-box-shadow: 1px 5px 5px 0px rgba(50, 50, 50, 0.5); -moz-box-shadow: 1px 5px 5px 0px rgba(50, 50, 50, 0.5); box-shadow: 1px 5px 5px 0px rgba(50, 50, 50, 0.5);
+}
+.pixel:hover { background:#ccc !important; }
+.pixel.postit:after {
+    content:""; position:absolute; top:0; bottom:0; right:0; left:0;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.25)), color-stop(37%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40000000', endColorstr='#00000000', GradientType=0);
+}
+
+.colorresults{line-height:40px; padding-top:20px;}
+.results .pixel{width:30px; height:30px; margin-right:10px;}
+
+.coloreditboard { padding:10px 0 0 0; text-align:center; }
+.coloreditboard .color { cursor:pointer; padding:2px; display:inline-block; }
+.coloreditboard .color span{display:block; width:20px; height:20px;}
+
+.eraseall, .eraser {margin:5px;}

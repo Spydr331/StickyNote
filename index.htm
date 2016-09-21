@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="pl">
+	<head>
+		<title>Sticky Note Art - Mike Feola.NET</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+
+		<link rel="stylesheet" href="../../css/bootstrap.min.css" media="all" />
+		<link rel="stylesheet" href="../../css/sticky.css" media="all" />
+
+		<!-- End Pattern Lab -->
+
+	</head>
+	<body class="body">
+		<div class="wrapper">
+			<div class="container">
+				<div class="text-center">
+					<form id="coloreditresize">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-3 col-xs-4">
+									<label>Size of the Note</label>
+								</div>
+								<div class="col-sm-3 col-xs-4">
+									<label>How Many Fit <br/>Left to Right</label>
+								</div>
+								<div class="col-sm-3 col-xs-4">
+									<label>How Many Fit <br/>Top to Bottom</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3 col-xs-4">
+									<input type="text" class="form-control" id="valsize" name="valsize" value="30" />
+								</div>
+								<div class="col-sm-3 col-xs-4">
+									<input type="text" class="form-control" id="valwidth" name="valwidth" value="15" />
+								</div>
+								<div class="col-sm-3 col-xs-4">
+									<input type="text" class="form-control" id="valheight" name="valheight" value="10" />
+								</div>
+								<div class="visible-xs "><br/><br/></div>
+								<div class="col-sm-3 col-xs-12">
+									<input type="submit" class="btn btn-primary" value="Resize Board" />
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<div class="coloreditboard">
+						<div class="color btn btn-default"><span rel="0" style="background-color:#B882CE"></span></div>
+						<div class="color btn btn-default"><span rel="1" style="background-color:#5E9ACE"></span></div>
+						<div class="color btn btn-default"><span rel="2" style="background-color:#BCD249"></span></div>
+						<div class="color btn btn-default"><span rel="3" style="background-color:#F9ED77"></span></div>
+						<div class="color btn btn-default"><span rel="4" style="background-color:#E1B15D"></span></div>
+						<div class="color btn btn-default"><span rel="5" style="background-color:#D46575"></span></div>
+						<div class="color btn btn-default active"><span rel="6" style="background-color:#eeeeee"></span></div>
+						<div class="color btn btn-default"><span rel="7" style="background-color:#333333"></span></div>
+						<br/>
+						<div class="eraser btn btn-default">Eraser</div>
+					</div>
+					<div class="pixeleditboard"></div>
+					<div class="eraseall btn btn-danger">Clear Board</div>
+					<div class="container colorresults text-left">
+						<div class="row results">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/sticky.js" ></script>
+	</body>
+</html>
